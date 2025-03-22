@@ -1,0 +1,355 @@
+* {
+    padding: 0; margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    /* font-family: "Roboto", sans-serif; */
+    /* font-family: "Poppins", sans-serif; */
+}
+:root {
+    --primary-color: #010535;
+    --secondary-color: #F2F2F5;
+    --text-color: #707070;
+    --accent-color: #4D51AB;
+    --accent-secondary-color: #55CEE3;
+    --white-color: #FFFFFF;
+    --dark-divider-color: #FFFFFF33;
+    --error-color: rgba(230, 87, 87);
+    --default-font: "Plus Jakarta Sans", sans-serif;
+}
+
+body, html{
+    width: 100%;
+    height: 100vh;
+}
+
+/* =================== Topbar start =================== */
+.topbar {
+    background: linear-gradient(90.15deg,var(--accent-color) 1.15%, var(--accent-secondary-color) 98.84%);
+    padding: 10px 0;
+}
+/* =================== Topbar left start =================== */
+.topbar .topbar-left p {
+    color: var(--white-color);
+    opacity: 80%;
+    margin: 0;
+    font-size: 17px;
+    padding-left:15px ;
+}
+.topbar .topbar-left p {
+    color: var(--white-color);
+    opacity: 80%;
+}
+.topbar .topbar-left p a {
+    font-weight: 600;
+    color: var(--white-color);
+    text-decoration: none;
+    text-decoration: underline;
+    text-transform: capitalize;
+    text-underline-offset: 3px;
+    transition: ease 0.6s;
+}
+.topbar .topbar-left p a:hover{
+    color: var(--primary-color);
+}
+/* =================== Topbar left end =================== */
+
+
+/* =================== Topbar right start =================== */
+.topbar .topbar-right {
+    display: flex;
+    justify-content: flex-end; 
+    align-items: center; 
+}
+.topbar .topbar-contact-info {
+    margin-right: 25px;
+    line-height: 20px;
+    position: relative;
+}
+.topbar .topbar-contact-info::after {
+    content: ""; 
+    position: absolute;
+    right: 0; 
+    top: 50%;
+    transform: translateY(-50%); 
+    width: 1px;
+    height: 15px; 
+    background-color: var(--dark-divider-color);
+}
+.topbar .topbar-right .topbar-contact-info a {
+    text-decoration: none;
+    color: var(--white-color);
+    font-size: 18px;
+    opacity: 80%;
+}
+.topbar .topbar-right .topbar-contact-info ul,
+.topbar .topbar-right .topbar-social-links ul {
+    display: flex;
+    padding: 0;
+    margin: 0;
+}
+.topbar .topbar-right .topbar-contact-info ul li {
+    position: relative;
+}
+.topbar .topbar-right .topbar-contact-info ul li  a,
+.topbar .topbar-right .topbar-social-links ul li a {
+    font-size: 18px;
+    margin-right: 20px;
+    transition: ease 0.6s;
+}
+.topbar .topbar-right .topbar-contact-info ul li a:hover,
+.topbar .topbar-right .topbar-social-links ul li a:hover {
+   color: var(--primary-color);
+}
+.topbar .topbar-right .topbar-social-links ul li a {
+    color: #fdfefe;
+}
+.topbar .topbar-contact-info ul li::before {
+    content: '/';
+    position: absolute;
+    top: 0;
+    right: 7px;
+    bottom: 0;
+    color: var(--white-color);
+    opacity: 80%;
+    font-size: 16px;
+}
+.topbar .topbar-contact-info ul li:last-child::before{
+    display: none;
+}  
+/* =================== Topbar right end =================== */
+
+/* =================== Topbar end =================== */
+
+
+/* =================== Header start =================== */
+.main-header .navbar {
+    padding: 20px 0;
+    align-items: center;    
+    display: flex;
+}
+.navbar .navbar-brand {
+    padding:0 ;
+    margin: 0;
+}
+.navbar .main-menu{
+    display: flex !important;
+    flex-basis: auto;
+}
+.navbar .main-menu .nav-menu-wrapper {
+    flex: 1;
+    text-align: center;
+    margin: 0 20px;
+    margin-right: 171px;
+
+.navbar .main-menu .nav-menu-wrapper .navbar-nav{
+    flex-direction: row;
+}
+.navbar .main-menu .nav-menu-wrapper ul {
+    align-items:center;
+    display: inline-flex;
+}
+.navbar .main-menu .nav-menu-wrapper ul li {
+    margin: 0;
+    position: relative;
+}
+.navbar .main-menu .nav-menu-wrapper ul li a {
+    font-size: 18px;
+    font-weight: 500;
+    color: var(--primary-color);
+    text-transform: capitalize;
+    padding: 10px 20px ;
+    line-height: 30px;
+}
+.navbar .main-menu .nav-menu-wrapper ul li a:hover {
+    color: var(--accent-secondary-color);
+}
+.btn-default {
+    position: relative;
+    display: inline-flex; /* Butonun içindəki elementləri yan-yana düz */
+    align-items: center; /* Mətn və ikon eyni xətdə olsun */
+    justify-content: center; /* Ümumi mərkəzləşdirmə */
+    background: linear-gradient(to right, var(--accent-color) 0%, var(--accent-secondary-color) 50%, var(--accent-color) 100%);
+    background-size: 200% auto;
+    border-radius: 100px;
+    color: var(--white-color);
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 1em;
+    text-transform: capitalize;
+    border: none;
+    padding: 17px 25px 17px 30px; /* Sağ boşluğu artır ki, ikon rahat yerləşsin */
+    transition: all 0.4s ease-in-out;
+    overflow: hidden;
+    text-decoration: none;
+    gap: 10px; /* Mətn və ikon arasındakı məsafəni tənzimlə */
+}
+.btn-default i {
+    margin-left: 7px;
+    color:  #53aed5;
+    font-size: 12px;
+    background: white; /* Arxa fon ağ olsun */
+    padding: 4px 6px;
+    border-radius: 50%;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+.btn-default:hover {
+    background-position: right center;
+}
+/* =================== Header start =================== */
+
+
+/* =================== Hero section start =================== */
+.hero {
+    position: relative;
+    background: url(../image/hero-bg.jpg);
+    background-repeat: no-repeat;
+    background-position: center ;
+    background-size: cover;
+    padding: 240px 0;
+    color: var(--white-color);
+    z-index: 1;  
+}
+.hero::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background: linear-gradient(270deg, rgba(1, 5, 53, 0.28) 43.57%, rgba(1, 5, 53, 0.8) 100%);
+    width: 100%;
+    height: 100%;
+    z-index: -1; /* Arxa planda qalsın */
+}
+.hero .section-title h3 {
+    position: relative;
+    font-size: 18px;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    padding-left: 30px;
+    margin-bottom: 20px;
+    /* z-index: 100; */
+} 
+.hero .section-title h3::before{
+    content: '';
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    position: absolute;
+    background: url(/image/icon-sub-heading\ \(1\).svg);
+    background-repeat: no-repeat;
+    background-position: left center;
+    background-size: cover;
+    width: 20px;
+    height: 20px;
+    color: var(--white-color);
+}
+.hero .section-title {
+    margin-bottom: 40px;
+}
+.hero .section-title h1 {
+    font-size: 72px;
+    font-weight: 700;
+    color: var(--white-color);
+    margin: 0;
+    
+}
+.hero .section-title p {
+    font-size: 18px;
+    margin-top: 20px;
+    margin-bottom: 0px;
+    padding-right:122px;
+}
+.hero .hero-content-body {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 40px;
+}
+.btn-highlighted {
+    position: relative;
+    color: var(--accent-color); /* Başlanğıc mətn rəngi */
+    background: var(--white-color); /* Ağ fon */
+    padding: 17px 25px 17px 30px; /* Sağ boşluğu artır ki, ikon rahat yerləşsin */
+    font-size: 19px;
+    font-weight: 600;
+    text-transform: capitalize;
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    justify-content: center;
+    border-radius: 100px; /* Tam dairəvi radius */
+    transition: all 0.4s ease-in-out;
+    overflow: hidden;
+    z-index: 1;
+}
+.btn-highlighted::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to right, var(--accent-color) 0%, var(--accent-secondary-color) 50%, var(--accent-color) 100%);
+    transition: all 0.4s ease-in-out;
+    z-index: -1;
+}
+.btn-highlighted:hover::before {
+    left: 0;
+    border-top-right-radius: 50px; 
+    border-bottom-right-radius: 50px;
+}
+.btn-highlighted:hover {
+    color: var(--white-color); 
+}
+.btn-highlighted i {
+    margin-left: 7px;
+    color: var(--white-color); 
+    font-size: 12px;
+    background: #4d51ab; 
+    padding: 6px 6px;
+    line-height: 10px;
+    border-radius: 50%;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.4s ease-in-out;
+}
+.btn-highlighted:hover i {
+    color: #53aed5;
+    background: var(--white-color);
+}
+.hero .video-play-button{
+    display: flex;
+    align-items: center ;
+    justify-content: center;
+}
+.hero .video-play-button i {
+    font-size: 20px;
+}
+.hero .video-play-button a {
+    height: 55px;
+    width: 55px;
+    color: #4d51ab;
+    text-decoration: none;
+    background: var(--white-color);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 10px;
+    transition:  ease 0.4s;
+}
+.hero .video-play-button a:hover{
+    color: var(--white-color);
+    background: #4d51ab;
+}
+.hero .video-play-button h3{
+    font-size: 18px;
+    text-transform: capitalize;
+    color: var(--white-color);
+    margin: 0;
+}
