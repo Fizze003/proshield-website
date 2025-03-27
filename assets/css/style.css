@@ -247,7 +247,7 @@ body, html{
     left: 0;
     transform: translateY(-50%);
     position: absolute;
-    background: url(/image/icon-sub-heading\ \(1\).svg);
+    background: url(/assets/image/icon-sub-heading\ \(1\).svg);
     background-repeat: no-repeat;
     background-position: left center;
     background-size: cover;
@@ -435,7 +435,7 @@ body, html{
     left: 0;
     transform: translateY(-50%);
     position: absolute;
-    background: url(/src/assets/image/icon-sub-heading\ \(1\).svg);
+    background: url(/assets/image/icon-sub-heading\ \(1\).svg);
     background-repeat: no-repeat;
     background-position: left center;
     background-size: cover;
@@ -456,6 +456,7 @@ body, html{
     margin-bottom: 0;
     margin-top: 20px;
     font-size: 17px;
+    color: #898989;
 }
 .about-us .about-us-body {
     display: flex;
@@ -499,5 +500,58 @@ body, html{
 .about-us .about-us-body-content p {
     color: var(--white-color);
     margin: 0;
+    font-size: 16px;
+    padding-right:25px ;
+}
+
+.about-us .about-us-footer {
+    display: flex;
+    align-items: center;
+    gap: 20px 30px;
+}
+.about-us .about-us-footer  .about-footer-list ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+.about-us .about-us-footer  .about-footer-list ul li {
+    background-image: url(/assets/image/icon-check.svg);
+    background-repeat: no-repeat;
+    background-position:  left top;
+    background-size: 24px auto;
+    padding-left: 35px;
+    margin-bottom: 18px;
     font-size: 18px;
+    color: #898989;
+}
+.about-us .about-footer-content .about-content-btn {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+}
+.about-us .about-content-btn .icon-box {
+    position: relative;
+    height: 46px;
+    width: 46px;
+    background: linear-gradient(to right, var(--accent-color) 0%, var(--accent-secondary-color) 50%, var(--accent-color) 100%);
+    background-size: 200% auto;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    margin-right: 10px;
+    transition: all 0.3s ease-in-out;
+    z-index: 1;
+}
+.about-us .about-content-btn .icon-box img {
+    width: 100%;
+    max-width: 28px;
+}
+.about-us .about-footer-btn-content h3 a{
+    font-size: 20px;
+    color: var(--primary-color);
+    margin: 0;
+    text-decoration: none;
 }
